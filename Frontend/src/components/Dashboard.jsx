@@ -45,7 +45,7 @@ const Dashboard = ({isDark}) => {
 
   useEffect(() => {
     const fetchFeedbacks = async () => {
-      const res = await axios.get('http://localhost:5000/feedback');
+      const res = await axios.get('https://feedback-dashboard-1.onrender.com/feedback');
       setFeedbacks(res.data);
     };
     fetchFeedbacks();
