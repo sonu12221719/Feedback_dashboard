@@ -58,7 +58,7 @@ const FeedbackForm = ({ isDark }) => {
   const handleConfirm = async () => {
     setSubmitting(true);
     setShowConfirm(false);
-    await axios.post('http://localhost:5000/feedback', { rating, message, name, email, category });
+    await axios.post('https://feedback-dashboard-1.onrender.com/feedback', { rating, message, name, email, category });
     setSubmitting(false);
     setRating(null);
     setMessage('');
